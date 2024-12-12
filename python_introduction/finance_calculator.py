@@ -1,10 +1,10 @@
 # calculate and provide feedback on a user’s monthly savings 
 #  Financial Details
 monthly_income = float(input("Enter your monthly income:"))
-monthly_expense = float(input("Enter your total monthly expenses:"))
+monthly_expenses = float(input("Enter your total monthly expenses:"))
 
 # Calculate Monthly Savings
-monthly_savings = monthly_income - monthly_expense
+monthly_savings = monthly_income - monthly_expenses
 rate = 0.05
 
 # Project Annual Savings
