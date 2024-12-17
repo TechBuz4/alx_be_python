@@ -4,7 +4,7 @@
 #prompting user for inputs
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operator = input("Choose the operation (+, -, *, /): *")
+operation = input("Choose the operation (+, -, *, /): ")
 
 #using match-case to perform the selected operation
 match operator:
