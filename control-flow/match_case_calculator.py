@@ -7,7 +7,7 @@ num2 = int(input("Enter the second number: "))
 operation = input("Choose the operation (+, -, *, /): ")
 
 #using match-case to perform the selected operation
-match operator:
+match operation:
     case "+":
         result = num1 + num2
         print(f"The result is {result}")
