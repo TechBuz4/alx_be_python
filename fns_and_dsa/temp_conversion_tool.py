@@ -12,15 +12,13 @@ def convert_to_fahrenheit(celsius):
 
 print("Temperature Calculator")
 temp = input("Enter the temperature to convert:")
-if temp.isdigit():
-    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
-    if choice.lower() == 'c':
-        result = convert_to_celsius(temp)
-        print(f"The temperature is {result} in Celsius.")
-    elif choice.lower() == 'f':
-        result = convert_to_fahrenheit(temp)
-        print(f"The tempearture is {result} in Fahrenheit")
-    else: 
-        print("The temperature is unknown")
-else:
-    print("Invalid temperature. Please enter a numeric value")
+choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
+if choice.lower() == 'c':
+    result = convert_to_celsius(temp)
+    print(f"The temperature is {result} in Celsius.")
+elif choice.lower() == 'f':
+    result = convert_to_fahrenheit(temp)
+    print(f"The tempearture is {result} in Fahrenheit")
+else: 
+    print(f'Invalid temperature. Please enter a numeric value.')
+     
