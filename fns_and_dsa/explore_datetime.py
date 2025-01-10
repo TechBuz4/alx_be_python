@@ -1,6 +1,7 @@
 # Familiarize yourself with Python’s datetime module by 
 # writing a script that performs specified operations with dates and times.
 from datetime import datetime, timedelta
+no_of_days = int(input("Enter the number of days to add to the current date:"))
 def display_current_datetime():
     """ function to display current time"""
     current_date = datetime.now()
