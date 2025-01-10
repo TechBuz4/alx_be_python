@@ -11,7 +11,7 @@ def convert_to_fahrenheit(celsius):
     return ((celsius * CELSIUS_TO_FAHRENHEIT_FACTOR ) + 32)
 
 print("Temperature Calculator")
-temp = int(input("Enter your temperature"))
+temp = int(input("Enter the temperature to convert:"))
 choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 if choice.lower() == 'c':
     result = convert_to_celsius(temp)
