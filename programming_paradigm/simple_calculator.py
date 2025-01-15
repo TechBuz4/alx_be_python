@@ -1,5 +1,6 @@
 # simple_calculator.py
-class SimpleCalculator():
+
+class SimpleCalculator:
     """A simple calculator class that supports basic arithmetic operations."""
 
     def add(self, a, b):
@@ -18,3 +19,4 @@ class SimpleCalculator():
         """Return the division of a by b. Returns None if b is zero."""
         if b == 0:
             return None
+        return a / b
