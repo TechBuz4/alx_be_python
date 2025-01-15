@@ -1,5 +1,7 @@
 # Objective: Learn the basics of unit testing in Python by writing tests for a provided SimpleCalculator class that supports addition,
 #  subtraction, multiplication, and division operations.
+import unittest
+from simple_calculator import SimpleCalculator
 
 class TestCalculator(unittest.TestCase):
     def setUp(self):
