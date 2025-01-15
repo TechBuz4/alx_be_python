@@ -5,7 +5,7 @@ from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calc = Simplecalcalculator
+        self.calc = Simplecalcalculator()
     def test_add(self):
         self.assertEqual(self.calc.add(self, 5, 3), 8)
         self.assertEqual(self.calc.add(self, -2, 2), 0)
