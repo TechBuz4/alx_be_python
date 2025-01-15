@@ -1,0 +1,29 @@
+# Objective: Learn the basics of unit testing in Python by writing tests for a provided SimpleCalculator class that supports addition,
+#  subtraction, multiplication, and division operations.
+
+class TestCalculator(unittest.TestCase):
+    def setUp(self):
+        self.calculator = SimpleCalculator
+    def test_add(self):
+        self.assertEqual(self.calculator.add(self, 5, 3), 8)
+        self.assertEqual(self.calculator.add(self, -2, 2), 0)
+        self.assertEqual(self.calculator.add(self, 0, 0), 0)
+        self.assertEqual(self.calculator.add(self, 10, -5), 5)
+    def test_subtract(self):
+        self.assertEqual(self.calculator.subtract(self, 5, 3), 2)
+        self.assertEqual(self.calculator.subtract(self, -2, 2), -4)
+        self.assertEqual(self.calculator.subtract(self, 0, 0), 0)
+        self.assertEqual(self.calculator.subtract(self, 10, -5), 15)
+    def test_multiply(self):
+        self.assertEqual(self.calculator.multiply(self, 5, 3), 15)
+        self.assertEqual(self.calculator.multiply(self, -2, 2), -4)
+        self.assertEqual(self.calculator.multiply(self, 0, 5), 0)
+        self.assertEqual(self.calculator.multiply(self, 10, -5), -50)
+    def test_divide(self):
+        self.assertEqual(self.calculator.divide(self, 5, 2), 2.5)
+        self.assertEqual(self.calculator.divide(self, 5, 0), None)
+        self.assertEqual(self.calculator.divide(self, 0, 5), 0)
+        self.assertEqual(self.calculator.divide(self, -10, 2), -5)
+
+if __name__ == '__main__':
+    unittest.main()
