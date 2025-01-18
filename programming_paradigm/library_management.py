@@ -7,11 +7,11 @@ class Book:
         self._is_checked_out = True
         print(f"You have checked out {title}")
 
-    def return_book(title, author):
+    def return_book(self):
         self._is_checked_out = False
         print(f"You have returned {title}")
 
-    def is_available():
+    def is_available(self):
         return not self._is_checked_out
 
 
